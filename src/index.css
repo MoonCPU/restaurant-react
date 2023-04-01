@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Bodoni;
+  background-color: #FDFDFD;
+}
+
+@layer utilities {
+  .text-shadow{
+    text-shadow: -3px 3px 0 red;
+  }
+}
+
+#kanji {
+  writing-mode: vertical-rl; 
+  margin: 0;
+  padding: 0;
+}
+
+.serpentine {
+  text-shadow: 2px 2px 0px #000, 4px 4px 0px #fff, 6px 6px 0px #000, 8px 8px 0px #fff;
+}
