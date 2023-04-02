@@ -52,11 +52,11 @@ const Home = () => {
     const variants3 = {
         visible: {
           opacity: 1,
-          x: 0,
+          x: 50,
         },
         hidden: {
           opacity: 0,
-          x: 50,
+          x: 0,
         },
     };
 
@@ -86,31 +86,31 @@ const Home = () => {
             </div>
 
                 <div className="max-w-2xl mx-auto">
-                    <div className="mt-16 mb-10 text-center flex flex-col items-center justify-center px-5">
+                    <div className="my-28 text-center flex flex-col items-center justify-center px-5">
                         <h1 className="text-4xl">Over 20 years of Success</h1>
                         <hr className="w-[50%] mt-4 mb-6 border border-black" />
                         <h1 className="text-xl">
                             Welcome to <span className="text-2xl">Ichiban Sushi</span>, where we have been serving delicious and authentic Japanese cuisine for over 20 years.
                         </h1>
                     </div>    
-                    <div className="flex items-center justify-center">
-                        <h1 className="mt-4 text-4xl font-bold text-[#D80D05] serpentine">寿司</h1>                          
-                    </div>  
                 </div>
-
-                <article id="article-4">
-                    <motion.div 
-                    ref={ref4}
-                    initial="hidden"
-                    animate={inView4 ? 'visible' : 'hidden'}
-                    variants={variants4}
-                    transition={{ duration: 0.8 }}
-                    className="max-w-xl mx-auto my-10 sm:my-36">
-                        <div className="flex items-center justify-center">
-                            <h1 className="text-4xl">About us / 私たちについて</h1>
-                        </div>
-                    </motion.div>                     
-                </article>
+                
+                <motion.div 
+                ref={ref4}
+                initial="hidden"
+                animate={inView4 ? 'visible' : 'hidden'}
+                variants={variants4}
+                transition={{ duration: 0.5 }}
+                className="max-w-3xl mx-auto relative left-[-50px]"
+                >
+                    <div className="my-28 flex flex-col mx-8">
+                        <h1 className="text-xl text-[#D80D05]">私たちについて / About Us</h1>
+                        <h1 className="font-[Asian] text-3xl mt-2 mb-3">Top-rated on Trip Advisor and Google: Our Commitment to Excellence</h1>
+                        <h1 className="text-lg">
+                        Since our establishment in 1997, we have always dedicated ourselves to providing the highest quality ingredients to our valued customers. Our efforts paid off; our restaurant has consistently earned some of the highest ratings on both Trip Advisor and Google. We are grateful for the trust and loyalty of our customers, and we look forward to continuing to provide an exceptional dining experience for many years to come.
+                        </h1>
+                    </div>    
+                </motion.div>
 
                 <article id="article-1">
                     <motion.div 
@@ -119,7 +119,7 @@ const Home = () => {
                     animate={inView ? 'visible' : 'hidden'}
                     variants={variants}
                     transition={{ duration: 0.5 }}
-                    className="max-w-4xl mx-auto mt-8 sm:mt-10 flex flex-col sm:flex-row">
+                    className="max-w-4xl mx-auto mt-8 sm:mt-10 flex flex-col sm:flex-row relative bottom-[50px]">
                         <div className="sm:w-[50%] mx-6 sm:mx-3 flex">
                             <div className="flex flex-row items-center justify-center">
                                 <div className="pt-[50px]">
@@ -185,7 +185,7 @@ const Home = () => {
                     animate={inView3 ? 'visible' : 'hidden'}
                     variants={variants3}
                     transition={{ duration: 0.8 }}
-                    className="max-w-2xl mx-auto my-10 sm:my-36">
+                    className="max-w-2xl mx-auto my-10 sm:my-36 relative right-[50px]">
                         <div className="flex items-center justify-center">
                             <h1 className="text-4xl">Units</h1>
                         </div>
