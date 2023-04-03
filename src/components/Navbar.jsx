@@ -32,7 +32,7 @@ const Navbar = () => {
                 </div>
                 
                 <div
-                className={!nav ? 'fixed flex flex-col left-0 top-0 w-[75%] h-screen border-r border-r-gray-900 ease-in-out duration-500 sm:hidden z-[100]': 'fixed flex flex-col h-screen left-[-100%] ease-in-out duration-500'}>
+                className={!nav ? 'fixed flex flex-col left-0 top-0 w-[75%] h-screen border-r border-r-gray-900 ease-in-out duration-500 sm:hidden z-[100] bg-[#FDFDFD]': 'fixed flex flex-col h-screen left-[-100%] ease-in-out duration-500'}>
                     <ul className="uppercase mt-5 ml-5">
                         <GiSushis className="text-red-700 mr-2" size={50}/>
                         <li className="p-2 text-2xl border-b border-gray-300 mt-10"><Link to="/">Home</Link></li>

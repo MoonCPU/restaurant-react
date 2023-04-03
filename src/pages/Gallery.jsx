@@ -47,7 +47,7 @@ const Gallery = () => {
         <motion.div className="h-full max-w-5xl mx-auto"
         initial={{width: 0}} 
         animate={{width: "100%"}} 
-        exit={{x: window.innerWidth, transition: {duration: 0.1}}}>
+        exit={{x: window.innerWidth, transition: {duration: 0.2}}}>
             <div>
             <ResponsiveMasonry columnsCountBreakPoints={{350: 1, 750: 2, 900: 3}}>
                 <Masonry gutter="0.5rem">

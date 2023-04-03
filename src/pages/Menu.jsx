@@ -4,10 +4,11 @@ import { motion } from "framer-motion";
 
 const Menu = () => {
     return(
-        <motion.div className="h-72 sm:h-screen w-full"
+        <motion.div id="menu-color"
+        className="h-screen w-full"
         initial={{width: 0}} 
         animate={{width: "100%"}} 
-        exit={{x: window.innerWidth, transition: {duration: 0.1}}}
+        exit={{x: window.innerWidth, transition: {duration: 0.2}}}
         >
 
         </motion.div>
