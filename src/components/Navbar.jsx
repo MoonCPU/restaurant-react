@@ -23,7 +23,7 @@ const Navbar = () => {
                 <ul className="hidden sm:flex flex-row">
                     <li className="px-2 text-xl"><button><Link to="/">Home</Link></button></li>
                     <li className="px-2 text-xl"><Link to="/gallery">Gallery</Link></li>
-                    <li className="px-2 text-xl"><Link to="/menu">Menu</Link></li>
+                    <li className="px-2 text-xl"><Link to="/credits">Credits</Link></li>
                 </ul>
 
                 {/* mobile menu icons*/}

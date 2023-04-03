@@ -4,7 +4,7 @@ import { Routes, Route, useLocation } from "react-router-dom";
 
 import Home from "../pages/Home";
 import Gallery from "../pages/Gallery";
-import Menu from "../pages/Menu";
+import Credits from "../pages/Credits";
 
 import { AnimatePresence } from "framer-motion";
 
@@ -16,7 +16,7 @@ const AnimatedRoutes = () => {
             <Routes location={location} key={location.pathname}>
                 <Route path="/" index element={<Home />} />
                     <Route path="gallery" element={<Gallery />} />
-                    <Route path="menu" element={<Menu />} />
+                    <Route path="credits" element={<Credits />} />
             </Routes>            
         </AnimatePresence>
     )

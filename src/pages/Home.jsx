@@ -210,7 +210,7 @@ const Home = () => {
                                     <h1>+1 (213) 555-1234</h1>
                                     <h1>info@ichibansushila.com</h1>                                         
                                 </div>
-                                <div className="flex flex-row text-2xl mt-14 items-center">
+                                <div className="flex flex-row text-2xl sm:mt-14 mb-8 sm:mb-0 items-center justify-center sm:justify-start">
                                     <SiUbereats size={50} color="#3FC060" className="mr-5" />
                                     <SiIfood size={50} color="#e32929" className="mr-6" />   
                                     <img className="h-11 max-w-full" src="/rappi.png" alt="rappi logo" />  
