@@ -6,65 +6,7 @@ import {SiTailwindcss} from 'react-icons/si';
 import {FaReact} from 'react-icons/fa';
 import {TbBrandFramerMotion} from 'react-icons/tb';
 
-import AceEditor from 'react-ace';
-import 'ace-builds/src-noconflict/theme-monokai';
-import 'ace-builds/src-noconflict/mode-javascript';
-
 const Credits = () => {
-    const code1 = `
-function onVisibilityChange(el, callback) {
-    var old_visible;
-    return function () {
-        var visible = isElementInViewport(el);
-        if (visible != old_visible) {
-            old_visible = visible;
-            if (typeof callback == 'function') {
-                callback();
-            }
-        }
-    }
-}
-
-var handler = onVisibilityChange(el, function() {
-    /* Your code go here */
-});
-
-if (window.addEventListener) {
-    addEventListener('DOMContentLoaded', handler, false);
-    addEventListener('load', handler, false);
-    addEventListener('scroll', handler, false);
-    addEventListener('resize', handler, false);
-} else if (window.attachEvent)  {
-    attachEvent('onDOMContentLoaded', handler); 
-    attachEvent('onload', handler);
-    attachEvent('onscroll', handler);
-    attachEvent('onresize', handler);
-}        
-    `;
-
-    const code2 = `
-const [ref, inView] = useInView({
-    threshold: 1,
-}); 
-    `;
-
-    const code3 = `
-#my_div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-    `;
-
-    const code4 = `
-<div className="flex items-center justify-center"></div>
-    `;
-
-    const code5 = `
-    <div className="fixed top-0 left-0 h-full w-full bg-gray-900 bg-opacity-90 flex items-center justify-center z-[150]"</div>        
-    `;
-
-
     return(
         <motion.div id="menu-color"
         className="w-full"
@@ -94,89 +36,25 @@ const [ref, inView] = useInView({
                             <h1>The base framework I used to develop Ichiban Sushi is React.</h1>
                             <h1>Although React only offer the bare minimum when it comes to developing features, it was designed to be that way as to allow developers to build custom UI components that fit their specific needs.</h1>
                             <h1>The result is that you can do a lot of cool things with React through the use of third-party libraries. Like this smooth animation in the home page with Framer-Motion:</h1>
-                            <img className="h-80 max-w-full rounded-md shadow-lg dark:shadow-black/30 my-5 border-2" src="/animation.gif" alt="animationGif" />
+                            <img className="h-60 sm:h-80 max-w-full rounded-md shadow-lg dark:shadow-black/30 my-5 border-2" src="/animation.gif" alt="animationGif" />
                             <h1>Creating smooth animations in vanilla CSS and Javascript can be tedious and complicated. Framer-Motion not only makes it easy and fast, it also allows you to create the kind of animation you would only expect see on the most high-end of professional websites.</h1>
                         </div>
                     </div>
                     <div className="mt-10 text-xl">
                         <h1>If you passed by the home page before coming here, you might have noticed that the animations play out as they come into view when you scroll down the page.</h1>
-                        <h1><span className="italic">"How do I know when my page elements come into view?"</span>, you might reasonably ask. Another great library that let me know when my divs come into view is called <span className="underline"> <a href="https://www.npmjs.com/package/react-intersection-observer" target="_blank">react-intersection-observer</a></span>.</h1>
-                        <h1>Despite the janky name, the features it provides are invaluable. In vanilla Javascript, you would have to write this:</h1>
-                        <div className="m-6">
-                            <AceEditor
-                            mode="javascript"
-                            theme="monokai"
-                            name="code-editor"
-                            readOnly={true}
-                            value={code1}
-                            editorProps={{ $blockScrolling: true }}
-                            setOptions={{ useWorker: false, fontSize: 13 }}
-                            style={{ width: '400px', height: '455px' }}
-                            />                            
-                        </div>
-                        <h1>Using react-intersection, you only have to write this:</h1>
-                        <div className="m-6">
-                            <AceEditor
-                            mode="javascript"
-                            theme="monokai"
-                            name="code-editor"
-                            readOnly={true}
-                            value={code2}
-                            editorProps={{ $blockScrolling: true }}
-                            setOptions={{ useWorker: false, fontSize: 13 }}
-                            style={{ width: '400px', height: '100px' }}
-                            />                            
-                        </div>
-                        <h1>Yep, that's it. No catch. In three lines, you can tell when your element on the page is in viewport or not. And before you ask, the code editors on web you just saw are implemented by yet another libary, <span className="underline"> <a href="https://www.npmjs.com/package/react-ace" target="_blank">react-ace</a></span>.</h1>
+                        <h1><span className="italic">"How do I know when my page elements come into view?"</span>, you might reasonably ask. A great library that let me know with ease when my divs come into view is called <span className="underline"> <a href="https://www.npmjs.com/package/react-intersection-observer" target="_blank">react-intersection-observer</a></span>.</h1>
                     </div>
                     <div className="mt-10 text-xl">
-                        <h1>But that's enough about React and its ever-growing army of very specific, but highly useful packages. Let's address the elephant in the room: the CSS.</h1>
-                        <img className="h-72 max-w-full rounded-md shadow-lg dark:shadow-black/30 z-[52] mx-auto my-5" src="/css.jpg" alt="css_is_awesome" />                        
-                        <h1>This website has 3 pages and 5 components. So even though there should be 8 css files for each page and component, only one file called "index.css" is used for general styling like background color and text shadow. This is thanks to the use of the Tailwind CSS framework.</h1>
-                        <h1 className="mt-10">In Tailwind, styles are represented by class names. So insted of coding this:</h1>
-                        <div className="m-6">
-                            <AceEditor
-                            mode="javascript"
-                            theme="monokai"
-                            name="code-editor"
-                            readOnly={true}
-                            value={code3}
-                            editorProps={{ $blockScrolling: true }}
-                            setOptions={{ useWorker: false, fontSize: 13 }}
-                            style={{ width: '400px', height: '100px' }}
-                            />                            
-                        </div>
-                        <h1>You would code this:</h1>
-                        <div className="m-6">
-                            <AceEditor
-                            mode="javascript"
-                            theme="monokai"
-                            name="code-editor"
-                            readOnly={true}
-                            value={code4}
-                            editorProps={{ $blockScrolling: true }}
-                            setOptions={{ useWorker: false, fontSize: 13 }}
-                            style={{ width: '400px', height: '50px' }}
-                            />                            
-                        </div>
-                        <h1>With Tailwind, you don't have to go back and forth between CSS and HTML files, making styling much easier and more efficient</h1>
-                        <h1 className="mt-2">Some people might argue that this approach causes the HTML tags to become bloated and hard to read, which it's a valid argument.</h1>
-                        <div className="m-6">
-                            <AceEditor
-                                mode="javascript"
-                                theme="monokai"
-                                name="code-editor"
-                                readOnly={true}
-                                value={code5}
-                                editorProps={{ $blockScrolling: true }}
-                                setOptions={{ useWorker: false, fontSize: 13 }}
-                                style={{ width: '400px', height: '60px' }}
-                                />                                
-                        </div>
-                        <h1>But it still beats having to deal with several different files with arbitrary identificator names for dozens of elements in your website. In Tailwind, the names are meaningful and you know exactly what they do, even after weeks or months without touching the code. Can't say the same, however, for the class or id names I came up on the spur of the moment.</h1>
+                        <h1>Another great tool I used for this project is Tailwind.</h1>
+                        <h1>Tailwind allows you to write utility classes as a property directly inside your element tags, meaning you don't have to go back and forth between CSS and HTML files, making styling much easier and more efficient.</h1>
+                        <h1 className="mt-2">Some people might argue that this approach causes the HTML tags to become bloated and hard to understand, which is a fair argument.</h1>
+                        <h1 className="bg-[#1E1E1E] h-24 w-full text-white text-lg flex items-center my-5">
+                            <code className="px-2">&lt;<span className="text-blue-400">div</span> <span className="text-blue-300">className</span>=&quot;<span className="text-orange-300">h-80 sm:h-50 max-w-full rounded-md shadow-lg dark:shadow-black/30 z-[52]</span>&quot; /&gt;</code>
+                        </h1>
+                        <h1>However, in Tailwind, the class names are meaningful and you can understand exactly what they do, even after weeks or months without touching the code. The same can hardly be said for the class or id names a developer came up with on the spur of the moment.</h1>
                         <div className="mt-10">
                             I guess that's it for this project. I spent more time I would like to admit on this fairly simple project, but I actually learned a ton. How to consume APIs, how to animate page transitions, styling and debugging.
-                            <h1>This is the first of the 4 coding projects I planned for the first semester of 2023. When you visit the other three subsequent projects, I hope they are much better than this one. Until then, see you later!</h1>
+                            <h1>This is the first of the 4 coding projects I planned for the first semester of 2023. When you visit the other three subsequent projects, I hope they are much better than this one. I'll see you then!</h1>
                         </div>
                     </div>
                 </div>

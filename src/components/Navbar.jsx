@@ -18,7 +18,7 @@ const Navbar = () => {
             <div className="max-w-2xl flex flex-row items-center justify-between mx-auto p-5">
                 <div className="text-5xl sm:text-6xl flex flex-row items-center justify-center">
                     <GiSushis className="text-red-700 mr-2" size={50}/>
-                    <h1 className="text-5xl">Ichiban Sushi</h1>
+                    <h1 className="text-4xl">Ichiban Sushi</h1>
                 </div>
                 <ul className="hidden sm:flex flex-row">
                     <li className="px-2 text-xl"><button><Link to="/">Home</Link></button></li>
