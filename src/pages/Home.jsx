@@ -146,7 +146,7 @@ const Home = () => {
                                 </div>
                             </div>
                             <div className="sm:w-[50%] mt-12 mb-12 sm:my-auto mx-4 sm:mt-0 sm:mx-0 sm:pl-4">
-                                <img className="object-contain h-80 max-w-full rounded-full shadow-lg dark:shadow-black/30 mx-auto" src="/chef2.png" alt="chef" />
+                                <img className="object-contain h-60 sm:h-80 max-w-full rounded-full shadow-lg dark:shadow-black/30 mx-auto" src="/chef2.png" alt="chef" />
                             </div>
                         </motion.div>                     
                     </article>
