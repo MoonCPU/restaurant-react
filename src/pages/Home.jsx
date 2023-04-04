@@ -9,7 +9,7 @@ import {SiIfood, SiUbereats} from 'react-icons/si';
 
 const Home = () => {
     const [ref, inView] = useInView({
-        threshold: 1,
+        threshold: 0.5,
         triggerOnce: true,
     });
 
@@ -96,7 +96,7 @@ const Home = () => {
                         </h1>
                     </div>    
                 </div>
-                <div className="h-full sm:h-[58rem] bg-[#1E1E1E] text-white">
+                <div className="h-full bg-[#1E1E1E] py-20 text-white">
                     <motion.div 
                     ref={ref4}
                     initial="hidden"
@@ -105,8 +105,8 @@ const Home = () => {
                     transition={{ duration: 0.8 }}
                     className="max-w-3xl mx-auto relative left-[-50px]"
                     >
-                        <div className="my-24 flex flex-col items-center justify-center mx-8">
-                            <h1 className="mt-24 text-[1.5rem] font-semibold text-red-600 serpentine">私たちについて / About Us</h1>
+                        <div className="flex flex-col items-center justify-center mx-8">
+                            <h1 className="text-[1.5rem] font-semibold text-red-600 serpentine">私たちについて / About Us</h1>
                             <div className="flex flex-row my-2">
                               <AiFillStar size={20} color="#ffcd3c" />   
                               <AiFillStar size={20} color="#ffcd3c" />   
@@ -145,8 +145,8 @@ const Home = () => {
                                     </div>                      
                                 </div>
                             </div>
-                            <div className="sm:w-[50%] mt-12 mb-12 sm:my-auto mx-4 sm:mt-0 sm:mx-0 sm:pl-4">
-                                <img className="object-contain h-60 sm:h-80 max-w-full rounded-full shadow-lg dark:shadow-black/30 mx-auto" src="/chef2.png" alt="chef" />
+                            <div className="sm:w-[50%] sm:my-auto mx-4 sm:mt-0 sm:mx-0 sm:pl-4">
+                                <img className="h-60 sm:h-80 max-w-full rounded-full shadow-lg dark:shadow-black/30 mx-auto" src="/chef2.png" alt="chef" />
                             </div>
                         </motion.div>                     
                     </article>
