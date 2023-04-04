@@ -135,10 +135,9 @@ const Home = () => {
                         className="max-w-4xl mx-auto mt-8 sm:mt-10 flex flex-col sm:flex-row relative bottom-[50px]">
                             <div className="sm:w-[50%] mx-6 sm:mx-3 flex">
                                 <div className="flex flex-row items-center justify-center">
-                                    <div className="pt-[79px] sm:pt-[51px]">
+                                    <div className="pt-[80px] sm:pt-[51px]">
                                         <h1 id="kanji" className="serpentine text-3xl text-[#f40009]">駄津緖 獅同</h1>    
                                     </div>
-                                    
                                     <div className="px-2">
                                         <h1 className="text-4xl sm:text-5xl font-medium border-b-2 serpentine">MEET THE CHEF</h1>
                                         <h1 className="text-3xl sm:text-4xl font-medium">Tatsuo Shido</h1>    
@@ -146,7 +145,7 @@ const Home = () => {
                                     </div>                      
                                 </div>
                             </div>
-                            <div className="sm:w-[50%] mt-12 sm:my-auto mx-4 pb-10 sm:mt-0 sm:mx-0 sm:pl-4">
+                            <div className="sm:w-[50%] mt-12 mb-12 sm:my-auto mx-4 sm:mt-0 sm:mx-0 sm:pl-4">
                                 <img className="object-contain h-80 max-w-full rounded-full shadow-lg dark:shadow-black/30 mx-auto" src="/chef2.png" alt="chef" />
                             </div>
                         </motion.div>                     
