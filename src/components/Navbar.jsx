@@ -33,11 +33,11 @@ const Navbar = () => {
                 
                 <div
                 className={!nav ? 'fixed flex flex-col left-0 top-0 w-[75%] h-screen border-r border-r-gray-900 ease-in-out duration-500 sm:hidden z-[100] bg-[#FDFDFD]': 'fixed flex flex-col h-screen left-[-100%] ease-in-out duration-500'}>
-                    <ul className="uppercase mt-5 ml-5">
+                    <ul className="uppercase mt-5 ml-5" onClick={handleNav}>
                         <GiSushis className="text-red-700 mr-2" size={50}/>
                         <li className="p-2 text-2xl border-b border-gray-300 mt-10"><Link to="/">Home</Link></li>
                         <li className="p-2 text-2xl border-b border-gray-300"><Link to="/gallery">Gallery</Link></li>
-                        <li className="p-2 text-2xl"><Link to="/menu">Menu</Link></li>
+                        <li className="p-2 text-2xl"><Link to="/credits">Credits</Link></li>
                     </ul>
                     <Suspense fallback={<h1>Loading...</h1>}>
                         <Outlet />                        
