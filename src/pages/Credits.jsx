@@ -48,7 +48,7 @@ const Credits = () => {
                         <h1>Another great tool I used for this project is Tailwind.</h1>
                         <h1>Tailwind allows you to write utility classes as a property directly inside your element tags, meaning you don't have to go back and forth between CSS and HTML files, making styling much easier and more efficient.</h1>
                         <h1 className="mt-2">Some people might argue that this approach causes the HTML tags to become bloated and hard to understand, which is a fair argument.</h1>
-                        <h1 className="bg-[#1E1E1E] h-32 w-full text-white text-lg flex items-center my-5">
+                        <h1 className="bg-[#1E1E1E] h-36 sm:h-32 w-full text-white text-lg flex items-center my-5">
                             <code className="px-2">&lt;<span className="text-blue-400">div</span> <span className="text-blue-300">className</span>=&quot;<span className="text-orange-300">h-80 sm:h-50 max-w-full rounded-md shadow-lg dark:shadow-black/30 z-[52]</span>&quot; /&gt;</code>
                         </h1>
                         <h1>However, in Tailwind, the class names are meaningful and you can understand exactly what they do, even after weeks or months without touching the code. The same can hardly be said for the class or id names a developer came up with on the spur of the moment.</h1>

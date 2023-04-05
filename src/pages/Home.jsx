@@ -9,7 +9,7 @@ import {SiIfood, SiUbereats} from 'react-icons/si';
 
 const Home = () => {
     const [ref, inView] = useInView({
-        threshold: 0.5,
+        threshold: 0.7,
         triggerOnce: true,
     });
 
@@ -88,7 +88,7 @@ const Home = () => {
             </div>
 
                 <div className="max-w-2xl mx-auto">
-                    <div className="my-32 lg:my-36 text-center flex flex-col items-center justify-center px-5">
+                    <div className="mt-14 mb-24 lg:my-36 text-center flex flex-col items-center justify-center px-5">
                         <h1 className="text-4xl">Over 20 years of Success</h1>
                         <hr className="w-[50%] mt-4 mb-6 border border-black" />
                         <h1 className="text-xl">
